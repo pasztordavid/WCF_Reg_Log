@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Login Frontend</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3 id="reg" >Bejelentkezés</h3>
+                    
+                </div>
+                <div class="card-body">
+                    <div class="col-sm">
+                        <div id="uList"></div>
+                            <div id="addCustomer">
+                                <form id="forms">
+                                    <span id="idField" class="center">
+                                        <div id="user">
+                                            <img width="30" height="30" src="/img/user.png" alt="">
+                                            <input type="text" id="felhasznalonev1" placeholder="Felhasználónév" ><br>
+                                            <img width="30" height="30" src="/img/pwd.png" alt="">
+                                            <input type="text" id="jelszo1" placeholder="Jelszó"><br><hr>
+                                            <img width="30" height="30" src="/img/admin.png" alt="">
+                                            <input type="number" id="jogos1" placeholder="Jogosultság"><br><hr>
+                                        </div>
+                                        
+                                        <div>
+                                            <button type="button" id="belepesGomb" class="button-49" value="Bejelentkezés">Bejelentkezés</button>
+                                            
+                                            <p id="engedely"></p><hr>
+                                            
+                                            <button id="stateButton" type="button" class="btn btn-primary">Regisztráció</button><br>
+                                        </div>
+                                    </span>       
+                                </form>
+                            </div>
+                           
+                        </div> 
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
